@@ -1,13 +1,68 @@
+/* Импорт стилей, шрифтов и иконок */
+/* Сброс CSS */
 @import url("https://marksheet.io/css/reset.css");
 
-h1 {
-    font-size: 20px;
+
+/* Базовые стили */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #777;
 }
 
-.underline {
-    text-decoration: underline;
+
+/* Предустановки */
+/* Разметка flex-элементов: row - горизонтально, column - вертикально */
+.row {
+   flex-direction: row;
+}
+.column {
+   flex-direction: column;
 }
 
-.orange {
-    color: orange;
+
+/* Гибкая верстка */
+
+
+/* Шапка сайта */
+.site-header {
+    flex: 0 0 auto;
+    background-color: #333;
+}
+
+
+/* Главное меню в шапке */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+/* Основное содержимое */
+.container {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+/* Подвал сайта */
+.site-footer {
+    flex: 0 0 auto;
+    background-color: #333;
+}
+
+
+/* Главное меню в подвале */
+footer > nav {
+    display: flex;
 }
